@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Trabajador Web
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="nivel masthead">
+					<div class="container-block">
+						<div class="block left">
+							<div class="content-block">
+								<ul>
+								<% if logged_in? %>
+									<li class="msg">Estás loggeado en este momento como <%=h current_user.login %>
+								<ul>
+									<li>Preferencias</li>
+									<li>Perfil</li>
+									<li>Tu Portafolio</li>
+									<li>Tus Recomendaciones</li>
+									<li>Disponibilidad: Full [Cambiar]</li>
+								</ul>
+								</li>
+								<li><%= link_to 'Salir', logout_path %></li>
+								<% else %>
+								<li class="msg">No has ingresado en este momento.</li>
+								<li><%= link_to 'Ingresar', login_path %></li>
+								<li><%= link_to 'Suscribirse', signup_path %></li>
+								<% end %>
+								</ul>
+							</div><!-- end content-block -->
+						</div><!-- end block left -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel masthead -->
+				<div class="nivel welcome">
+					<div class="container-block">
+						<div class="block">
+							<div class="content-block">
+								<% if flash[:notice] %><div class="notice"><%= flash[:notice] %></div><% end %>
+								<h1>
+									trabajador web
+								</h1>
+								<ul>
+									<li>
+										<a href="http://some-site.com/">directorio de trabajadores</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">calculadora de proyectos</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">bolsa de trabajo</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">recursos</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">blog</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">sobre nosotros</a>
+									</li>
+								</ul>
+							</div><!-- end content-block -->
+						</div><!-- end block -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel welcome -->
+				<div class="nivel intro">
+					<div class="container-block">
+						<div class="block a">
+							<div class="content-block">
+								<h2>
+									hola
+								</h2>
+								<p>
+									Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+								</p>
+								<p>
+									Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+								</p>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+						<div class="block b">
+							<div class="content-block">
+								<h2>
+									<a href="#">blog</a>
+								</h2>
+								<ul>
+									<li>
+										<h3>
+											<a href="http://some-site.com/">Titulo del post</a>
+										</h3>
+										<p>
+											Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus.
+										</p>
+									</li>
+									<li>
+										<h3>
+											<a href="http://some-site.com/">Titulo del post</a>
+										</h3>
+										<p>
+											Ut hendrerit laoreet erat. Suspendisse vehicula
+										</p>
+									</li>
+								</ul>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block b -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel intro -->
+				<div class="nivel promoDirectorio">
+					<div class="container-block">
+						<h2>
+							<a href="#">directorio</a>
+						</h2>
+						<div class="block a">
+							<div class="content-block">
+								<p>
+									Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.Sed ornare quam in libero. Integer a justo et ante porta faucibus.
+								</p>
+								<p>
+									Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+								</p>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+						<div class="block b">
+							<div class="content-block">
+								<form action="" method="post" class="formHome" id="">
+									<h2>
+										Buscar trabajador
+									</h2>
+									<p>
+										Utiliza este buscador para encontrar a un trabajador web
+									</p>
+									<ul>
+										<li id="li_1">
+											<label for="element_1" class="description">Escoje especialidad</label>
+											<div>
+												<select name="element_1" id="element_1" class="selectElementHome">
+													<option value="1">
+														html
+													</option>
+													<option value="2">
+														php
+													</option>
+													<option value="3">
+														mysql
+													</option>
+												</select>
+											</div>
+										</li>
+										<li id="li_2">
+											<label for="element_2" class="description">Por tipo de proyecto</label>
+											<div>
+												<select name="element_2" id="element_2" class="selectElementHome">
+													<option value="1">
+														mercadeo
+													</option>
+													<option value="2">
+														asesoria
+													</option>
+													<option value="3">
+														Third option
+													</option>
+												</select>
+											</div>
+										</li>
+									</ul>
+								</form>
+								<h3>
+									<a href="http://some-site.com/">Participa!. Inscríbete aquí</a>
+								</h3>
+							</div><!-- end content-block -->
+						</div><!-- end block b -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel promoDirectorio -->
+				<div class="nivel promoTools">
+					<div class="container-block">
+						<h2>
+							herramientas
+						</h2>
+						<div class="block a">
+							<div class="content-block">
+								<h2>
+									<a href="#">calculadora cotizar proyecto</a>
+								</h2>
+								<p>
+									Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+								</p>
+								<p>
+									Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+								</p>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+						<div class="block b">
+							<div class="content-block">
+								<h2>
+									<a href="#">bolsa de trabajo</a>
+								</h2>
+								<ul>
+									<li>
+										<h3>
+											<a href="http://some-site.com/">Titulo del oferta</a>
+										</h3>
+										<p>
+											Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus.
+										</p>
+									</li>
+									<li>
+										<h3>
+											<a href="http://some-site.com/">Titulo del oferta</a>
+										</h3>
+										<p>
+											Ut hendrerit laoreet erat. Suspendisse vehicula
+										</p>
+									</li>
+								</ul>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block b -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel promoTools -->
+				<div class="nivel promoResources">
+					<div class="container-block">
+						<h2>
+							<a href="http://some-site.com/">recursos</a>
+						</h2>
+						<div class="block a">
+							<div class="content-block">
+								<h2>
+									enlaces
+								</h2>
+								<ul>
+									<li>
+										<a href="http://some-site.com/">Ut hendrerit laoreet erat</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">Suspendisse vehicula magna eget</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">Vehicula magna</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">Donec interdum dictum</a>
+									</li>
+								</ul>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+						<div class="block b">
+							<div class="content-block">
+								<h2>
+									calendario
+								</h2>
+								<table>
+									<tbody>
+										<tr>
+											<th colspan="7">
+												enero
+											</th>
+										</tr>
+										<tr>
+											<td class="diaSemana">
+												Lu
+											</td>
+											<td class="diaSemana">
+												Ma
+											</td>
+											<td class="diaSemana">
+												Mi
+											</td>
+											<td class="diaSemana">
+												Ju
+											</td>
+											<td class="diaSemana">
+												Vi
+											</td>
+											<td class="diaSemana">
+												Sa
+											</td>
+											<td class="diaSemana">
+												Do
+											</td>
+										</tr>
+										<tr>
+											<td>
+												15
+											</td>
+											<td>
+												16
+											</td>
+											<td>
+												17
+											</td>
+											<td>
+												18
+											</td>
+											<td>
+												19
+											</td>
+											<td>
+												20
+											</td>
+											<td>
+												21
+											</td>
+										</tr>
+										<tr>
+											<td>
+												22
+											</td>
+											<td>
+												23
+											</td>
+											<td>
+												24
+											</td>
+											<td>
+												25
+											</td>
+											<td>
+												26
+											</td>
+											<td>
+												27
+											</td>
+											<td>
+												28
+											</td>
+										</tr>
+										<tr>
+											<td>
+												29
+											</td>
+											<td>
+												30
+											</td>
+											<td>
+												31
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!-- end content-block -->
+						</div><!-- end block b -->
+						<div class="block c">
+							<div class="content-block">
+								<h2>
+									twitter
+								</h2>
+								<p class="twitterQuot">
+									" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar, sem id faucibus aliquam, diam elit luctus enim, vel consequat sed. "
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block c -->
+					</div><!-- end block container-block -->
+				</div><!-- nivel promoResources -->
+			</div><!-- fin content -->
+			<div class="footer">
+				<p>
+					wireframe trabajador web. version 0
+				</p>
+			</div><!-- fin footer -->
+		</div><!-- fin container -->
+	</body>
+</html>

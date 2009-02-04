@@ -1,0 +1,384 @@
+/* estilo propios a trabajadorweb. basado en nivelstyle */
+
+/* @group textos */
+
+h1{
+	font-size: 4em;
+}
+
+
+h2{
+	font-size: 2.8em;
+}
+
+
+h3{
+	font-size: 2em;
+}
+
+
+p{
+	font-size: 1.8em;
+}
+
+
+
+
+/* @end */
+
+/* @group masthead */
+
+.masthead{
+	font-size: 2em;
+	padding:0;
+	margin: 0;
+}
+
+.masthead .container-block {
+	padding-left: 640px;
+}
+
+
+.masthead .left {
+	background-color: #F8ECBB;
+	width: 300px;
+}
+
+.masthead ul{
+float: right;
+padding-right: 10px;
+}
+
+.masthead li{
+	float: left;
+}
+
+
+
+
+
+/* @end */
+
+/* @group welcome */
+
+.welcome{
+	background: #EDEBE3;
+	padding:5px 0;
+	margin-top: 10px;
+}
+
+.welcome .container-block {
+	padding-left: 240px;
+}
+.welcome .content-block {
+	padding-left: 26px;
+}
+
+.welcome .block {
+	width: 700px;
+}
+
+.welcome h1 {
+	margin: 0;
+	padding-top: 5px;
+}
+
+.welcome ul{
+	font-size: 1.7em;
+}
+
+.welcome li{
+	float: left;
+	padding: 5px 16px 10px 0;
+}
+
+
+
+/* @end */
+
+/* @group intro */
+
+.intro {
+	background: #EDEBE3;
+	margin: 0;
+}
+.intro .container-block {
+	padding: 10px 0;
+}
+.intro .content-block {
+	padding: 10px;
+}
+
+.intro .block.a .content-block {
+	width: 380px;
+	margin-left: 260px;
+	margin-right: 20px;
+	background-color: #F4F3EE;
+}
+
+.intro .block.a .content-block h2{
+	margin: 0 0 10px 0;
+	font-size: 8em;
+}
+
+.intro .block.a .content-block p{
+	margin: 0 0 10px 5px;
+	font-size: 2em;
+	font-family: Georgia;
+	line-height: 1.3em;
+}
+
+.intro .block.b .content-block   {
+	width: 220px;
+	background-color: #F4F3EE;
+}
+
+.intro .block.b .content-block h2{
+	margin: 0 0 10px 0;
+}
+
+.intro .block.b .content-block h3{
+	margin: 0;
+	font-size: 1.7em;
+}
+
+.intro .block.b .content-block p{
+	margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+/* @end */
+
+/* @group Promo Directorio */
+
+.promoDirectorio {
+	background: #EDEBE3;
+	padding: 10px;
+}
+.promoDirectorio .container-block {
+	padding: 0;
+}
+.promoDirectorio .content-block {
+	padding: 10px;
+}
+
+.promoDirectorio .container-block h2{
+	font-size: 3em;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+
+.promoDirectorio .block.a .content-block {
+	width: 460px;
+	margin-right: 20px;
+	background-color: #F4F3EE;
+}
+
+.promoDirectorio .block.a .content-block h2{
+	margin: 0 0 10px 0;
+}
+
+.promoDirectorio .block.a .content-block p{
+	margin: 0 0 10px 0;
+	padding: 0 0 0 120px;
+	line-height: 1.4em;
+}
+
+.promoDirectorio .block.b .content-block   {
+	width: 390px;
+	background-color: #F4F3EE;
+}
+
+.promoDirectorio .block.b .content-block h2{
+	margin: 0 0 10px 0;
+}
+
+.promoDirectorio .block.b .content-block h3{
+	text-align: center;
+	padding: 10px;
+	background-color: #F8ECBB;
+}
+
+.promoDirectorio .block.b .content-block h3{
+	margin: 0 0 0 100px;
+	font-size: 1.7em;
+}
+
+.promoDirectorio .block.b .content-block p{
+	margin: 0 0 10px 0;
+}
+
+.promoDirectorio .block.b .content-block h2{
+	font-size: 2em;
+	margin: 0;
+}
+
+.promoDirectorio .block.b .content-block li{
+	margin-bottom: 10px;
+}
+
+label.description {
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+.selectElementHome{
+	width: 200px;
+}
+
+
+.formHome{
+	margin-bottom: 20px;
+	margin-left: 100px;
+}
+
+/* @end */
+
+/* @group promo Tools */
+
+.promoTools {
+	background: #EDEBE3;
+	margin: 0;
+}
+
+.promoTools .container-block h2{
+	font-size: 3em;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.promoTools .container-block {
+	padding: 10px;
+}
+.promoTools .content-block {
+	padding: 10px;
+}
+
+.promoTools .block.a .content-block {
+	width: 460px;
+	background-color: #F4F3EE;
+	margin-right: 20px;
+}
+
+.promoTools .block.a .content-block h2{
+	margin: 0 0 10px 120px;
+}
+
+.promoTools .block.a .content-block p{
+	margin: 0 0 10px 120px;
+}
+
+.promoTools .block.b .content-block   {
+	width: 390px;
+	background-color: #F4F3EE;
+}
+
+.promoTools .block.b .content-block h2{
+	margin: 0 0 10px 100px;
+}
+
+.promoTools .block.b .content-block h3{
+	margin: 0 0 0 100px;
+	font-size: 1.7em;
+}
+
+.promoTools .block.b .content-block p{
+	margin: 0 0 10px 100px;
+}
+
+
+
+
+
+
+/* @end */
+
+/* @group promo Resources */
+
+.promoResources {
+	background:#EDEBE3;
+	padding: 10px;
+}
+
+.promoResources .container-block h2{
+	font-size: 3em;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.promoResources .content-block {
+	padding:10px;
+}
+.promoResources .content-block h2{
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.promoResources .content-block p{
+	margin-bottom: 10px;
+}
+.promoResources .content-block ul{
+	font-size: 1.5em;
+	margin: 8px 0;
+	font-weight: bold;
+}
+
+.promoResources .content-block li{
+	margin-bottom: 13px;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+.promoResources .content-block table{
+	width: 240px;
+	padding: 0;
+	border: 1px solid #999;
+	margin: 10px auto;
+}
+
+.promoResources .content-block th{
+	padding: 3px;
+	font-size: 1.35em;
+}
+
+.promoResources .content-block td{
+	padding: 0;
+	margin: 0;
+	border: 1px solid #999;
+	font-size: 1.35em;
+}
+
+.promoResources .content-block td{
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+.promoResources .block {
+	width: 290px;
+	background-color: #F4F3EE;
+	margin-right: 20px;
+}
+
+.diaSemana{
+	background-color: #F8ECBB;
+}
+
+.twitterQuot{
+	line-height: 1.5em;
+	font-style: italic;
+	padding: 0 20px;
+	font-family: Georgia;
+}
+
+
+
+
+
+
+
+
+/* @end masNoticias */

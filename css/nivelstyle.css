@@ -1,0 +1,18 @@
+/* @group you only need this */
+
+.nivel {
+	overflow:hidden;
+	float: left;
+	width: 100%;
+}
+.content , .container-block , .block {
+	float: left;
+	display:inline;
+	overflow:hidden; 
+}
+
+.footer {
+	clear:both;
+}
+
+/* @end */
