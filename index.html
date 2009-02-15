@@ -15,6 +15,7 @@
 					<div class="container-block">
 						<div class="block left">
 							<div class="content-block">
+								<!-- RoR tags para ingreso -->
 								<ul>
 								<% if logged_in? %>
 									<li class="msg">Estás loggeado en este momento como <%=h current_user.login %>
@@ -33,6 +34,7 @@
 								<li><%= link_to 'Suscribirse', signup_path %></li>
 								<% end %>
 								</ul>
+								<!-- / RoR tags para ingreso -->
 							</div><!-- end content-block -->
 						</div><!-- end block left -->
 					</div><!-- end container-block-->
@@ -41,7 +43,9 @@
 					<div class="container-block">
 						<div class="block">
 							<div class="content-block">
+								<!-- RoR tags para mensajes de confirmación -->
 								<% if flash[:notice] %><div class="notice"><%= flash[:notice] %></div><% end %>
+								<!-- /RoR tags para mensajes de confirmación -->
 								<h1>
 									trabajador web
 								</h1>
