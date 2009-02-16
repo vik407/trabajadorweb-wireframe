@@ -13,13 +13,211 @@
 	<body>
 		<div class="container">
 			<div class="content">
+				<div class="nivel masthead">
+					<div class="container-block">
+						<div class="block left">
+							<div class="content-block">
+								<!-- RoR tags para ingreso -->
+								<ul>
+								<% if logged_in? %>
+									<li class="msg">Estás loggeado en este momento como <%=h current_user.login %>
+								<ul>
+									<li>Preferencias</li>
+									<li>Perfil</li>
+									<li>Tu Portafolio</li>
+									<li>Tus Recomendaciones</li>
+									<li>Disponibilidad: Full [Cambiar]</li>
+								</ul>
+								</li>
+								<li><%= link_to 'Salir', logout_path %></li>
+								<% else %>
+								<li class="msg">No has ingresado en este momento.</li>
+								<li><%= link_to 'Ingresar', login_path %></li>
+								<li><%= link_to 'Suscribirse', signup_path %></li>
+								<% end %>
+								</ul>
+								<!-- / RoR tags para ingreso -->
+							</div><!-- end content-block -->
+						</div><!-- end block left -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel masthead -->
+				<div class="nivel welcome">
+					<div class="container-block">
+						<div class="block">
+							<div class="content-block">
+								<!-- RoR tags para mensajes de confirmación -->
+								<% if flash[:notice] %><div class="notice"><%= flash[:notice] %></div><% end %>
+								<!-- /RoR tags para mensajes de confirmación -->
+								<h1>
+									trabajador web
+								</h1>
+								<ul>
+									<li>
+										<a href="directorio.html">directorio de trabajadores</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">calculadora de proyectos</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">bolsa de trabajo</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">recursos</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">blog</a>
+									</li>
+									<li>
+										<a href="http://some-site.com/">sobre nosotros</a>
+									</li>
+								</ul>
+							</div><!-- end content-block -->
+						</div><!-- end block -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel welcome -->
 				
-			</div><!-- fin content -->
+				
+				
+				<!-- inicia el primer piso de contenido -->
+				
+				<div class="nivel directorioFirstFloor">
+					<div class="container-block">
+						<div class="block a">
+							<div class="content-block">
+								<h2>
+									<a href="#" title="Inscribete a nuestro directorio">Inscríbete a nuestro directorio</a>
+								</h2>
+								<p>
+									Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+								</p>
+								<p>
+									Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+								</p>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+						<div class="block b">
+							<div class="content-block">
+								<h2>
+									<a href="#" title="Mi Perfil">Mi perfil</a>
+								</h2>
+								<p>
+									Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+								</p>
+								<p>
+									Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+								</p>
+								<p class="especial-link1">
+									<a href="#">More info</a>
+								</p>
+							</div><!-- end content-block -->
+						</div><!-- end block b -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel directorioFirstFloor -->
+				
+			<!-- termina el primer piso de contenido	 -->
+			
+			
+			
+			<!-- inicia el segundo piso de contenido -->
+			
+			<div class="nivel directorioSecondFloor">
+				<div class="container-block">
+					<div class="block a">
+						<div class="content-block">
+							<h2>
+								<a href="#" title="Buscar talento">Buscar talento</a>
+							</h2>
+							<p>
+								Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+							</p>
+							<p>
+								Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+							</p>
+							<p class="especial-link1">
+								<a href="#">More info</a>
+							</p>
+						</div><!-- end content-block -->
+					</div><!-- end block a -->
+					<div class="block b">
+						<div class="content-block">
+							<h2>
+								<a href="#" title="Se busca">Se busca</a>
+							</h2>
+							<p>
+								Ut hendrerit laoreet erat. Suspendisse vehicula magna eget tellus. Fusce sagittis. Donec interdum dictum purus. Sed sagittis arcu vel felis. Aliquam erat volutpat.
+							</p>
+							<p>
+								Sed ornare quam in libero. Integer a justo et ante porta faucibus. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+							</p>
+							<p class="especial-link1">
+								<a href="#">More info</a>
+							</p>
+						</div><!-- end content-block -->
+					</div><!-- end block b -->
+				</div><!-- end container-block-->
+			</div><!-- end nivel directorioSecondFloor -->
+			
+		<!-- termina el segundo piso de contenido	 -->
+				
+				
+				
+				<!-- inicia el tercer piso de contenido -->
+
+				<div class="nivel directorioThirdFloor">
+					<div class="container-block">
+						<div class="block a">
+							<div class="content-block">
+								<h2>
+									<a href="#" title="Persona o proyecto destacado">Persona o proyecto destacado</a>
+								</h2>
+									<div class="content-destacado">
+										<img src="img/directorio-inicio-destacado.png">
+										<h2><a href="#">Jorger Benitez Mora</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+										<ul>
+											<li><a href="#">Aliquip ex ea commodo</a></li>
+											<li><a href="#">Laboris nisi ut aliquip</a></li>
+											<li><a href="#">Sunt in culpa qui officia deserunt mollit anim id est laborum</a></li>
+										</ul>
+										<p class="especial-link1">
+											<a href="#">More info</a>
+										</p>
+										<pre><a href="#" title="ver otros proyectos destacados">ver otros proyectos destacados</a> | <a href="#" title-"ver todo el directorio">ver todo el directorio</a></pre>
+										</div>
+								<div class="clear">
+								</div>
+							</div><!-- end content-block -->
+						</div><!-- end block a -->
+					</div><!-- end container-block-->
+				</div><!-- end nivel directorioThirdFloor -->
+
+			<!-- termina el tercer piso de contenido	 -->
+				
+				
+				
+				
+				
+			</div>
+			
+			<!-- fin content -->
+			
+			
+			
+			<!-- inicia el footer -->
+			
 			<div class="footer">
 				<p>
 					wireframe trabajador web. version 0
 				</p>
-			</div><!-- fin footer -->
+			</div>
+			
+			<!-- fin footer -->
+		
+		
+		
 		</div><!-- fin container -->
 	</body>
 </html>

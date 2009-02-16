@@ -89,7 +89,7 @@ padding-right: 10px;
 
 .welcome li{
 	float: left;
-	padding: 5px 16px 10px 0;
+	padding: 5px 12px 10px 0;
 }
 
 
@@ -261,6 +261,8 @@ label.description {
 	padding: 10px;
 }
 
+
+
 .promoTools .block.a .content-block {
 	width: 460px;
 	background-color: #F4F3EE;
@@ -374,11 +376,113 @@ label.description {
 	font-family: Georgia;
 }
 
-
-
-
-
-
-
-
 /* @end masNoticias */
+
+
+
+/* @group pagina de inicio directorio first floor */
+
+.directorioFirstFloor{
+	background: #EDEBE3;
+	margin: 0;
+	padding: 20px;
+}
+
+
+.directorioFirstFloor .block.a .content-block {
+	width: 420px;
+	background-color: #F4F3EE;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.directorioFirstFloor .block.b .content-block {
+	width: 420px;
+	padding: 10px;
+	background-color: #F4F3EE;
+}
+
+/* @end */
+
+
+/* @group pagina de inicio directorio second floor */
+
+.directorioSecondFloor{
+	background: #EDEBE3;
+	margin: 0;
+	padding: 20px;
+}
+
+
+.directorioSecondFloor .block.a .content-block {
+	width: 420px;
+	background-color: #F4F3EE;
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.directorioSecondFloor .block.b .content-block {
+	width: 420px;
+	padding: 10px;
+	background-color: #F4F3EE;
+}
+
+/* @end */
+
+/* @group pagina de inicio directorio third floor */
+
+.directorioThirdFloor{
+	background: #EDEBE3;
+	margin: 0;
+	padding: 20px;
+}
+
+
+.directorioThirdFloor .block.a .content-block {
+	width: 880px;
+	background-color: #F4F3EE;
+	padding: 10px;
+}
+
+.content-destacado{
+
+}
+
+.content-destacado img{
+	margin: 10px 0;
+	float: left;
+}
+
+.content-destacado p, .content-destacado h2, .content-destacado ul{
+	padding: 0 20px 0 350px;
+}
+
+.content-destacado h2{
+	margin: 0 0 10px 0;
+}
+
+.content-destacado ul{
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 10px 0;
+	list-style-type: circle;
+}
+.content-destacado li{
+	margin: 9px 28px;
+}
+
+.content-destacado pre{
+	font-size: 1.8em;
+	font-weight: bold;
+	background-color: #fdffa6;
+	margin: 20px 0 10px 350px;
+	padding: 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+/* @end */
+
+.clear{
+	clear: both;
+}
